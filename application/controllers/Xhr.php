@@ -20,7 +20,7 @@ class Xhr extends MX_Controller {
      */
     public function category_ajax_list()
     {
-        if ( @$_SERVER['REQUEST_METHOD'] !== 'POST' && !$this->input->is_ajax_request() && !$this->ion_auth->logged_in() ) {
+        if ( @$_SERVER['REQUEST_METHOD'] !== 'POST' && !$this->input->is_ajax_request() ) {
             die("method not allowed");
         }
 
@@ -68,7 +68,7 @@ class Xhr extends MX_Controller {
      */
     public function category_pop_ajax_list()
     {
-        if ( @$_SERVER['REQUEST_METHOD'] !== 'POST' && !$this->input->is_ajax_request() && !$this->ion_auth->logged_in() ) {
+        if ( @$_SERVER['REQUEST_METHOD'] !== 'POST' && !$this->input->is_ajax_request() ) {
             die("method not allowed");
         }
 
